@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Volkhov');
+
+body { background: #ececec;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Volkhov', serif;
+  font-weight: 100;
+}
+
+a, p, li {
+  font-weight: 100;
+}
+
+a {
+  &:visited {
+    color: inherit;
+  }
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.6;
+  @include mq($from: mobile, $until: desktop) {
+    font-size: 16px;
+  }
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 20px 0;
+  font-weight: 100;
+  font-size: 13px;
+}
